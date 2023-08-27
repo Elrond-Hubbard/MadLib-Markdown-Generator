@@ -16,15 +16,21 @@ function validateInput(input, message) {
 // TODO: Create an array of questions for user input
 const questions = [{
     type: 'input',
-    message: 'What is your name?',
-    name: 'name',
-    validate: input => validateInput(input, "Did you forget your name?")
+    message: 'Project Title:',
+    name: 'title',
+    validate: input => validateInput(input, "Please provide a title for your README file.")
 },
 {
     type: 'input',
-    message: 'What is your quest?',
-    name: 'quest',
-    validate: input => validateInput(input, "Have you forgotten your quest?!")
+    message: 'Project Description:',
+    name: 'description',
+    validate: input => validateInput(input, "Please provide a description of your project.")
+},
+{
+    type: 'input',
+    message: 'Installation Instructions:',
+    name: 'installation',
+    validate: input => validateInput(input, "Please provide instructions for installing your project.")
 },
 {
     type: 'list',
