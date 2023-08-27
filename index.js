@@ -2,16 +2,28 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+// An error message is displayed if questions are not answered.
+function validateInput(input, message) {
+    if (input) {
+        return true;
+    } else {
+        console.log(message)
+        return false
+    }
+}
+
 // TODO: Create an array of questions for user input
 const questions = [{
     type: 'input',
     message: 'What is your name?',
     name: 'name',
+    validate: input => validateInput(input, "Did you forget your name?")
 },
 {
     type: 'input',
     message: 'What is your quest?',
     name: 'quest',
+    validate: input => validateInput(input, "Have you forgotten your quest?!")
 },
 {
     type: 'list',
