@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // An error message is displayed if questions are not answered.
 function validateInput(input, message) {
@@ -34,14 +35,16 @@ const questions = [{
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, answers) {
+    fs.writeFile(fileName, generateMarkdown(answers), () => console.log('Success!'))
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
-            console.log(answers);
+            writeToFile('log.txt', answers)
         })
 }
 
