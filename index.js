@@ -33,9 +33,40 @@ const questions = [{
     validate: input => validateInput(input, "Please provide instructions for installing your project.")
 },
 {
+    type: 'input',
+    message: 'Usage Instructions:',
+    name: 'usage',
+    validate: input => validateInput(input, "Please provide instructions for using your project.")
+},
+{
+    type: 'input',
+    message: 'Contribution Guidelines:',
+    name: 'contributing',
+    validate: input => validateInput(input, "Please provide contribution guidelines for your project.")
+},
+{
+    type: 'input',
+    message: 'Testing Procedures:',
+    name: 'tests',
+    validate: input => validateInput(input, "Please provide testing procedures for your project.")
+},
+{
+    type: 'input',
+    message: 'GitHub Username:',
+    name: 'github',
+    validate: input => validateInput(input, "Please enter your GitHub username.")
+},
+{
+    type: 'input',
+    message: 'Email Address',
+    name: 'email',
+    validateInput: input => validateInput(input, "Please enter your email address.")
+},
+{},
+{
     type: 'list',
-    message: 'What is your favorite color',
-    name: 'color',
+    message: 'Project License:',
+    name: 'license',
     choices: ['Red', 'Blue', 'Yellow'],
     default: ['Blue'],
 }];
