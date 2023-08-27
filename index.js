@@ -62,7 +62,6 @@ const questions = [{
     name: 'email',
     validateInput: input => validateInput(input, "Please enter your email address.")
 },
-{},
 {
     type: 'list',
     message: 'Project License:',
