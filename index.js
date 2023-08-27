@@ -44,7 +44,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
-            writeToFile('log.txt', answers)
+            writeToFile('README.md', answers)
         })
 }
 
