@@ -1,7 +1,7 @@
 # MadLib Markdown Generator
   ![github-license](https://img.shields.io/badge/License-MIT-blue.svg)
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/kJi1-wDwSzA?si=PedKFUy_BxANV46R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/kJi1-wDwSzA/0.jpg)](https://www.youtube.com/watch?v=kJi1-wDwSzA)
 
   ## Description
   MadLib is a simple file generator powered by Node. User input is collected in the terminal and passed to a markdown template. The template is formatted for use as a project README file.
