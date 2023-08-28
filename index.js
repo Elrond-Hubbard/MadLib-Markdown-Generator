@@ -66,7 +66,7 @@ const questions = [{
     type: 'list',
     message: 'Project License:',
     name: 'license',
-    choices: ['Red', 'Blue', 'Yellow'],
+    choices: ['MIT', 'APACHE-2.0', 'None'],
     default: ['Blue'],
 }];
 
