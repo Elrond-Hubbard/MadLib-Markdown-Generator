@@ -1,7 +1,8 @@
 # MadLib Markdown Generator
+  ![github-license](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description
-  MadLib is a simple README generator powered by Node. User input is collected in the terminal and passed to a markdown template. The template is formatted for use as a project README file.
+  MadLib is a simple file generator powered by Node. User input is collected in the terminal and passed to a markdown template. The template is formattted for use as a project README file.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -24,10 +25,9 @@
   N/A
 
   ## Questions
-  If you have any additional questions, [message me here](https://github.com/Elrond-Hubbard).
+  [Elrond-Hubbard](https://github.com/Elrond-Hubbard)
 
   marsolomichael@gmail.com
 
   ## License
-    ![github-license](https://img.shields.io/badge/License-MIT-blue.svg)
-    [MIT](https://choosealicense.com/licenses/mit/)
+  This project falls under the [MIT](https://choosealicense.com/licenses/mit/) license

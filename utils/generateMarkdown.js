@@ -21,13 +21,13 @@ function renderLicenseSection(license) {
   if (license === 'None') {
     return ``;} 
     else {return `## License
-    ${renderLicenseBadge(license)}
-    ${renderLicenseLink(license)}`;}
+  This project falls under the ${renderLicenseLink(license)} license`;}
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}
+  ${renderLicenseBadge(answers.license)}
 
   ## Description
   ${answers.description}
@@ -53,7 +53,7 @@ function generateMarkdown(answers) {
   ${answers.tests}
 
   ## Questions
-  If you have any additional questions, [message me here](https://github.com/${answers.github}).
+  [${answers.github}](https://github.com/${answers.github})
 
   ${answers.email}
 
