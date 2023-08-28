@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// DEPENDENCIES
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -13,7 +13,8 @@ function validateInput(input, message) {
     }
 }
 
-// TODO: Create an array of questions for user input
+// The user is prompted to provide details about their project.
+// The 'name' property of each prompt will store the user's answer.
 const questions = [{
     type: 'input',
     message: 'Project Title:',
@@ -67,15 +68,15 @@ const questions = [{
     message: 'Project License:',
     name: 'license',
     choices: ['MIT', 'APACHE-2.0', 'None'],
-    default: ['Blue'],
+    default: ['MIT']
 }];
 
-// TODO: Create a function to write README file
+// Answers are passed to the generateMarkdown function to create a new file.
 function writeToFile(fileName, answers) {
     fs.writeFile(fileName, generateMarkdown(answers), () => console.log('Success!'))
 }
 
-// TODO: Create a function to initialize app
+// The questionnaire is initialized and answers are written to a specified file.
 function init() {
     inquirer
         .prompt(questions)

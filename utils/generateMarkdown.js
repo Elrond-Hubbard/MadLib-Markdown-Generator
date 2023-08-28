@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// A badge is created for the user's selected license.
+// If there is no license, an empty string is returned.
 function renderLicenseBadge(license) {
   if (license === 'None') {
     return ``;} 
@@ -7,24 +7,26 @@ function renderLicenseBadge(license) {
   
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// A URL is created for the user's selected license.
+// If there is no license, an empty string is returned.
 function renderLicenseLink(license) {
   if (license === 'None') {
     return ``;} 
     else {return `[${license}](https://choosealicense.com/licenses/${license.toLowerCase()}/)`;}
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// A license section for the README file is created.
+// If there is no license, an empty string is returned.
 function renderLicenseSection(license) {
   if (license === 'None') {
     return ``;} 
     else {return `## License
-  This project falls under the ${renderLicenseLink(license)} license`;}
+  This project falls under the ${renderLicenseLink(license)} license.`;}
 }
 
-// TODO: Create a function to generate markdown for README
+// MARKDOWN TEMPLATE
+// The template accepts the questionnaire's 'answers' object as input
+// and returns a string of markdown text formatted as a README file.
 function generateMarkdown(answers) {
   return `# ${answers.title}
   ${renderLicenseBadge(answers.license)}
